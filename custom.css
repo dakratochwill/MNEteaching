@@ -1,0 +1,143 @@
+.mne-button a {
+    background: #4186c6;
+    padding: 10px;
+    color: #fff !important;
+    border: none;
+    display: block;
+    text-align: center;
+}
+
+.mne-button a:hover {
+    background: #333;
+    color: #fff;
+}
+
+.masonry {
+    column-count: 3;
+    column-gap: 30px;
+    height: auto;
+}
+
+.masonry-2 {
+    column-count: 2;
+}
+
+.masonry-4 {
+    column-count: 4;
+}
+
+.masonry-item {
+    break-inside: avoid;
+    position: relative;
+}
+
+.masonry-caption {
+    padding: 0px 5px;
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    .masonry, .masonry-2, .masonry-4 {
+        column-count: 1;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 1200px) {
+    .masonry, .masonry-2, .masonry-4 {
+        column-count: 2;
+    }
+}
+
+.list-icon {
+    color: #333;
+    font-size: 20px;
+    list-style: none;
+    padding: 0px;
+    line-height: 1.5;
+}
+
+.list-icon li {
+    padding-left: 1.5em;
+    margin-bottom: 20px;
+    vertical-align: middle;
+}
+
+.list-icon li:before {
+    content: '\f013';
+    font-family: 'Font Awesome 5 Free';
+    color: #4186c6;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -1.5em; /* same as padding-left set on li */
+    width: 1.5em; /* same as padding-left set on li */
+}
+
+.lightbox {
+    /** Default lightbox to hidden */
+    display: none;
+    /** Position and style */
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.lightbox img {
+    /** Pad the lightbox image */
+    max-width: 90%;
+    max-height: 90%;
+    margin-top: 2%;
+}
+
+.lightbox:target {
+    /** Remove default browser outline */
+    outline: none;
+    /** Unhide lightbox **/
+    display: block;
+}
+
+.image {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* When you mouse over the container, fade in the overlay icon*/
+.masonry-item:hover .overlay {
+    opacity: 1;
+}
+
+.zoom {
+    color: white !important;
+    text-decoration: none;
+    border: none !important;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.contact {
+    background: #f2f2f2;
+    padding: 20px;
+    border-top: 3px solid #4186c6;
+    margin: 30px 0px;
+}
