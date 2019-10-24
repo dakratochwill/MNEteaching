@@ -15,7 +15,6 @@
 .masonry {
     column-count: 3;
     column-gap: 30px;
-    height: auto;
 }
 
 .masonry-2 {
@@ -26,6 +25,11 @@
     column-count: 4;
 }
 
+.masonry-5 {
+    column-count: 5;
+    height: 270px;
+}
+
 .masonry-item {
     break-inside: avoid;
     position: relative;
@@ -34,17 +38,21 @@
 .masonry-caption {
     padding: 0px 5px;
     text-align: center;
+    font-style: italic;
+    font-size: 14px;
 }
 
 @media screen and (max-width: 500px) {
-    .masonry, .masonry-2, .masonry-4 {
+    .masonry, .masonry-2, .masonry-4, .masonry-5 {
         column-count: 1;
+        height: auto;
     }
 }
 
 @media screen and (min-width: 501px) and (max-width: 1200px) {
-    .masonry, .masonry-2, .masonry-4 {
+    .masonry, .masonry-2, .masonry-4, .masonry-5 {
         column-count: 2;
+        height: auto;
     }
 }
 
